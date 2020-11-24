@@ -3,8 +3,6 @@ semester project
 
 Community Science Museum
 
-“Explore together”
-
 An interactive science museum called the Community Science Museum is opening in your town/city. 
 
 Target audience: 
