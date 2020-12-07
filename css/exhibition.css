@@ -1,0 +1,42 @@
+img {
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 5%;
+}
+/*desktop styles*/
+@media only screen and (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 0% 5%;
+  }
+
+  #first {
+    order: 1;
+    margin: auto 5px auto 0px;
+  }
+  #second {
+    order: 2;
+  }
+  #third {
+    order: 3;
+  }
+  #fourth {
+    order: 4;
+    margin: auto 0px auto 5px;
+  }
+  #fifth {
+    order: 5;
+    margin: auto 5px auto 0px;
+  }
+  #sixth {
+    order: 6;
+  }
+  img {
+    align-self: stretch;
+  }
+}

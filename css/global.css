@@ -1,0 +1,151 @@
+body {
+  font-family: "montserrat", arial, sans-serif;
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  margin: 0px;
+}
+#logo {
+  width: 95px;
+  margin: 13px 0px 0px 0px;
+}
+nav {
+  display: grid inline-grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin: 0% 5%;
+}
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+}
+nav label {
+  float: right;
+  margin: 15px 0px 0px 0px;
+}
+nav li {
+  display: block;
+}
+nav li {
+  display: none;
+}
+#hamburger-menu {
+  display: none;
+}
+nav #hamburger-menu:checked ~ ul li {
+  display: block;
+  padding: 13px 0px;
+}
+nav ul {
+  padding-left: 0%;
+}
+nav a:hover {
+  font-weight: 600;
+}
+.active {
+  font-weight: 600;
+}
+.column1,
+.column2 {
+  display: inline-block;
+}
+.column2 {
+  float: right;
+}
+p span {
+  display: block;
+}
+input[type="text"] {
+  font-family: "montserrat", arial, sans-serif;
+  font-size: 10px;
+  padding: 5px;
+  border: 1px solid black;
+}
+input[type="submit"] {
+  display: block;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-family: "montserrat", arial, sans-serif;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 3px 7px;
+  margin: 5px 0px 0px 0px;
+}
+input[type="submit"]:hover {
+  background-color: #a67b83;
+}
+.column1,
+.column2,
+.column3 {
+  margin: 5%;
+}
+.column2 :nth-child(2),
+.column2 :nth-child(3) {
+  font-size: 10px;
+}
+footer {
+  background-color: #e3d7cf;
+  border: 1px solid #e3d7cf;
+  font-size: 12px;
+  font-weight: 300;
+}
+h1 {
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  margin: 5% 0% 5% 5%;
+}
+h2 {
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+/*tablet styles*/
+@media only screen and (min-width: 768px) {
+  footer {
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .column2 :nth-child(2),
+  .column2 :nth-child(3) {
+    font-size: 16px;
+  }
+  input[type="submit"] {
+    font-size: 14px;
+  }
+  input[type="text"] {
+    font-size: 14px;
+  }
+  .column1,
+  .column2,
+  .column3 {
+    margin: 20px auto;
+  }
+}
+
+/*desktop styles*/
+@media only screen and (min-width: 992px) {
+  #hamburger-menu {
+    display: none;
+  }
+  label[for="hamburger-menu"] {
+    display: none !important;
+  }
+  nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 15px;
+  }
+  nav ul {
+    float: right;
+  }
+}
