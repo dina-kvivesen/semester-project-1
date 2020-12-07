@@ -60,4 +60,14 @@ img {
     order: 6;
     margin: auto 5%;
   }
+  .section1 {
+    overflow: hidden;
+  }
+  .section1 img {
+    transition: transform 1s, filter 2s ease-in-out;
+    transform: scale(1.2);
+  }
+  .section1:hover img {
+    transform: scale(1) rotate(25deg);
+  }
 }

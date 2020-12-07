@@ -107,6 +107,10 @@ h2 {
   font-style: normal;
   font-size: 25px;
 }
+p a {
+  color: black;
+  font-weight: 600;
+}
 
 /*tablet styles*/
 @media only screen and (min-width: 768px) {

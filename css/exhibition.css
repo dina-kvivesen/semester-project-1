@@ -6,6 +6,7 @@ img {
   flex-direction: column;
   margin: 0% 5%;
 }
+
 /*desktop styles*/
 @media only screen and (min-width: 992px) {
   .container {
@@ -36,7 +37,33 @@ img {
   #sixth {
     order: 6;
   }
+  #seventh {
+    order: 7;
+  }
+  #eight {
+    order: 8;
+    margin: auto 0px auto 5px;
+  }
+  #nineth {
+    order: 9;
+    margin: auto 5px auto 0px;
+  }
+  #tenth {
+    order: 10;
+  }
   img {
     align-self: stretch;
+  }
+  .section2 {
+    overflow: hidden;
+  }
+  .section2 img {
+    transition: transform 1s, filter 2s ease-in-out;
+    transform: scale(1.2);
+    filter: brightness(50%);
+  }
+  .section2:hover:hover img {
+    filter: brightness(100%);
+    transform: scale(1);
   }
 }
