@@ -7,8 +7,8 @@ body {
   margin: 0px;
 }
 #logo {
-  width: 120px;
-  margin: 7px 0px 0px 0px;
+  width: 140px;
+  margin: 5px 0px -4px 0px;
 }
 nav {
   display: grid inline-grid;
