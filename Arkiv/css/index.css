@@ -1,0 +1,245 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "montserrat", sans-serif;
+  font-style: normal;
+}
+h1 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 45px;
+  color: white;
+  margin: 5% 0% 0% 5%;
+}
+.windturbine {
+  width: 100%;
+}
+.airplane {
+  width: 100%;
+}
+.headertext1,
+.headertext2 {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin: 0% 5%;
+}
+h2 {
+  font-weight: 600;
+  font-size: 18px;
+}
+h2 span {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+}
+h2 {
+  margin: 20px 0px 10px 0px;
+}
+h3,
+h4,
+h5 {
+  font-weight: 400;
+  margin: 5px 0px;
+}
+h3 {
+  font-size: 14px;
+}
+h4 {
+  font-size: 12px;
+}
+h5 {
+  font-size: 18px;
+}
+.readmore-button {
+  text-decoration: none;
+  display: block;
+  font-family: "montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #000000;
+  border: 1px solid black;
+  background-color: #a67b83;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  margin-left: 5%;
+  width: 73px;
+}
+.readmore-button:hover {
+  background-color: white;
+}
+.button {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background-color: #b4a7ad;
+  border: 1px solid black;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 20px;
+  display: block;
+  margin: -1px 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+#hoursbtn:hover,
+#pricesbtn:hover,
+#locationbtn:hover {
+  background-color: white;
+}
+footer {
+  margin-top: 10px;
+}
+
+/*tablet styles*/
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 70px;
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+  }
+  .windturbine {
+    display: none;
+    width: 50%;
+  }
+  .airplane {
+    display: none;
+    width: 50%;
+  }
+  .images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    display: none;
+  }
+  .landingheader {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px;
+    column-gap: 0;
+    margin: 0%;
+  }
+  .section1 {
+    background-image: url("../images/aeronautics.jpg");
+    margin: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .section2 {
+    background-image: url("../images/windturbine.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+  }
+  .headertext1 h2,
+  .headertext1 h3,
+  .headertext1 h4,
+  .headertext1 h5 {
+    color: white;
+    text-align: right;
+  }
+  .headertext1 {
+    margin-top: 85px;
+  }
+  h2 span {
+    display: inline;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  .section2 a {
+    display: none;
+  }
+  .readmore-button {
+    position: absolute;
+    margin-left: 43%;
+    background-color: white;
+    padding: 10px 20px;
+  }
+  .readmore-button:hover {
+    background-color: #a67b83;
+  }
+  .headertext2 {
+    text-align: right;
+    margin-top: 290px;
+    color: white;
+  }
+
+  #hoursbtn,
+  #pricesbtn,
+  #locationbtn {
+    display: inline-block;
+    font-size: 18px;
+    width: 30%;
+    padding: 17px 0px;
+    margin: 10px;
+  }
+  .container {
+    text-align: center;
+    margin: 0% 5%;
+  }
+}
+
+/*desktop styles*/
+@media only screen and (min-width: 992px) {
+  h1 {
+    margin-top: 10px;
+  }
+  .headertext1 {
+    margin-top: 95px;
+  }
+  .readmore-button {
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 50px;
+  }
+  .landingheader {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 550px;
+    column-gap: 0px;
+  }
+  .headertext2 {
+    text-align: right;
+    margin-top: 420px;
+    color: white;
+  }
+  h2 span {
+    display: inline;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 25px;
+  }
+  main {
+    max-width: 1600px;
+    margin: 0% auto;
+  }
+}

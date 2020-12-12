@@ -1,0 +1,69 @@
+img {
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 5%;
+}
+
+/*desktop styles*/
+@media only screen and (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 0% 5%;
+  }
+
+  #first {
+    order: 1;
+    margin: auto 5px auto 0px;
+  }
+  #second {
+    order: 2;
+  }
+  #third {
+    order: 3;
+  }
+  #fourth {
+    order: 4;
+    margin: auto 0px auto 5px;
+  }
+  #fifth {
+    order: 5;
+    margin: auto 5px auto 0px;
+  }
+  #sixth {
+    order: 6;
+  }
+  #seventh {
+    order: 7;
+  }
+  #eight {
+    order: 8;
+    margin: auto 0px auto 5px;
+  }
+  #nineth {
+    order: 9;
+    margin: auto 5px auto 0px;
+  }
+  #tenth {
+    order: 10;
+  }
+  img {
+    align-self: stretch;
+  }
+  .section2 {
+    overflow: hidden;
+  }
+  .section2 img {
+    transition: transform 1s, filter 2s ease-in-out;
+    transform: scale(1.2);
+    filter: brightness(50%);
+  }
+  .section2:hover:hover img {
+    filter: brightness(100%);
+    transform: scale(1);
+  }
+}

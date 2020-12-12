@@ -1,0 +1,26 @@
+.columns {
+  margin: 0% 5%;
+}
+img {
+  width: 100%;
+}
+
+/*tablet styles*/
+@media only screen and (min-width: 768px) {
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+  }
+  .rows {
+    display: grid;
+    grid-template-rows: 300px auto 300px;
+  }
+}
+/*desktop styles*/
+@media only screen and (min-width: 992px) {
+  .columns {
+    max-width: 1200px;
+    column-gap: 5%;
+  }
+}
