@@ -35,36 +35,56 @@
     </header>
     <main>
         <h1>Contact us</h1>
-
-        <section>
-            <form action="form-success.php" class="contactform">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Name.."
-                class="form__input"
-              />
-    
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="E-mail.."
-                class="form__input"
-              />
-    
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder="Type your message here.."
-                style="height: 200px"
-                class="form__input"
-              ></textarea>
-    
-              <input type="submit" value="Send" id="sendbutton" />
-            </form>
-        </section>
+       
+        <div class="contact-container">
+          <div class="text">
+            <p>If you have any questions or want to send us a message please fill in the form below
+              </p>
+          </div>
+          
+          <div class="contact-form">
+          <form>
+            <div id="message"></div>
+            <div>
+              <p>Fields marked with an * are required</p>
+                <label>
+                    Name*
+                    <input class="text-box" name="name" id="name" />
+                </label>
+                <div class="form-error" id="nameError">Please enter your name</div>
+            </div>
+  
+            <div>
+                <label>
+                    Email*
+                    <input class="text-box" name="email" id="email" />
+                </label>
+                <div class="form-error" id="emailError">Please enter a valid email address</div>
+            </div>
+  
+            <div>
+              <label>
+                  Subject*
+                  <input class="text-box" name="subject" id="subject" />
+              </label>
+              <div class="form-error" id="subjectError">Subject must be minimum 15 characters</div>
+          </div>
+  
+            <div>
+              <label>
+                  Message* 
+                  <textarea
+              id="message-container"
+              name="message"
+            ></textarea>
+              </label>
+              <div class="form-error" id="messageError">Message must be minimum 25 characters</div>
+          </div>
+  
+            <button id="sendbutton">Send</button>
+        </form>
+  
+        </div>
 
     </main>
     <footer>
@@ -95,6 +115,6 @@
             </form>
         </div>
     </footer>
-    
+    <script src="js/contact.js"></script>
     </body>
     </html>
