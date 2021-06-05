@@ -22,13 +22,13 @@ function validateForm(event) {
         nameError.style.display = "block";
         message.innerHTML = "";
     }
-    if (checkLength(subject.value, 15) === true) {
+    if (checkLength(subject.value, 5) === true) {
         subjectError.style.display = "none";
     } else {
         subjectError.style.display = "block";
         message.innerHTML = "";
     }
-    if (checkLength(messageContainer.value, 25) === true) {
+    if (checkLength(messageContainer.value, 10) === true) {
         messageError.style.display = "none";
     } else {
         messageError.style.display = "block";
