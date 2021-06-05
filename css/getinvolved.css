@@ -17,5 +17,6 @@
   .columns {
     max-width: 1200px;
     column-gap: 50px;
+    margin: auto;
   }
 }

@@ -43,10 +43,11 @@ nav ul {
   padding-left: 0%;
 }
 nav a:hover {
-  font-weight: 600;
+  text-decoration: underline;
 }
 .active {
   font-weight: 600;
+  text-decoration: underline;
 }
 .column1,
 .column2 {
